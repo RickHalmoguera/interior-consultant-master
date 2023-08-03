@@ -1,1 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    padding: 1em;
+    background: #181719;
+    color: #fff;
+    height: 100svh;
+    
+}
+
+.c-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+}
+
+.c-nav__logo{
+    padding: .5em;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Crimson Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;    
+}
+
+#menuOpenBtn{
+    font-size: 38px;
+}
+
+.c-nav__navlinks{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.c-menu{
+    display: none;
+    background: #181719;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+#menuCloseBtn{
+    font-size: 38px;
+    display: flex;
+    justify-content: end;
+}
+
+.c-menu__navlinks{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.c-hero__textBox h1{
+    color: #FFF;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.c-hero__textBox p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.c-hero__textBox span{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.c-hero__gallery img{
+    position: relative;
+    max-width: 100%;
+}
+
+.c-card{
+    background-color: #181719;
+    position: absolute;
+    right: 50%;
+    bottom: 10em;
+    max-width: 410px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.c-card__header{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.c-card img{
+    border-radius: 50%;
+    width: 62px;
+   
+}
+
+.c-header__text{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.c-header__text h3{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.c-header__text p{
+    color: #828282;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.c-card__bodyText{
+    color: #FFF;
+    font-family: Lora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
