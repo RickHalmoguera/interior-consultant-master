@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./devchallenges.png" />
-  <link rel="stylesheet" href="index.css">
   <script src="https://kit.fontawesome.com/c45d098780.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
   <title>Interior Consultant Master</title>
 </head>
   <body>
 
-    <div class="c-nav__mobile">
-      <span class="c-nac__logo">the interior</span>
+    <div class="c-nav">
+      <div class="c-nav__logo">
+        <span>the interior</span>
+      </div>
       <i class="fa-solid fa-bars" id="menuOpenBtn"></i>
     </div>
 
-    <div class="c-nav__desktop">
-      <span class="c-nac__logo">the interior</span>
-      <ul>
+    <div class="c-nav ">
+      <div class="c-nav__logo">
+        <span>the interior</span>
+      </div>
+
+      <ul class="c-nav__navlinks">
         <li class="c-menu__section">Home</li>
         <li class="c-menu__section">Collection</li>
         <li class="c-menu__section">About</li>
@@ -27,7 +32,7 @@
 
     <div class="c-menu">
       <i class="fa-solid fa-xmark" id="menuCloseBtn"></i>
-      <ul>
+      <ul class="c-menu__navlinks">
         <li class="c-menu__section">Home</li>
         <li class="c-menu__section">Collection</li>
         <li class="c-menu__section">About</li>
@@ -48,10 +53,12 @@
         <div class="c-card">
           <div class="c-card__header">
             <img src="./photo2.png" alt="Profile pic">
-            <h3>Aliza Webber</h3>
-            <p>Interior designer</p>
+            <div class="c-header__text">
+              <h3>Aliza Webber</h3>
+              <p>Interior designer</p>
+            </div>
           </div>
-          <div class="c-card__text">
+          <div class="c-card__bodyText">
             <h2>Designed in 2020 by Aliza Webber</h2>
           </div>
         </div>
