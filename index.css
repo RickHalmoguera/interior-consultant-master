@@ -11,13 +11,21 @@ body{
     background: #181719;
     color: #fff;
     height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
     
 }
 
-.c-nav{
+.c-nav__mobile{
     display: flex;
     justify-content: space-between;
     height: 32px;
+}
+
+.c-nav__desktop{
+    display: none
 }
 
 .c-nav__logo{
@@ -83,6 +91,12 @@ body{
     line-height: normal;
 }
 
+.c-hero__textBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .c-hero__textBox h1{
     color: #FFF;
     font-family: Lora;
@@ -93,6 +107,7 @@ body{
 }
 
 .c-hero__textBox p{
+    max-width: 250px;
     color: #FFF;
     font-family: Montserrat;
     font-size: 14px;
@@ -110,9 +125,18 @@ body{
     line-height: normal;
 }
 
-.c-hero__gallery img{
+.c-textBox__link{
+    display: flex;
+    gap: 1em;
+}
+
+.c-hero__gallery{
     position: relative;
-    max-width: 100%;
+    
+}
+
+.c-hero__gallery img{
+    width: 100%;
 }
 
 .c-card{
@@ -163,11 +187,32 @@ body{
     line-height: normal;
 }
 
-.c-card__bodyText{
+.c-card__bodyText h2{
     color: #FFF;
     font-family: Lora;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+footer{
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+
+    .c-nav__desktop{
+        display: flex;
+        justify-content: space-between;
+        height: 32px;
+    }
+    
+    .c-nav__mobile{
+        display: none
+    }
 }
