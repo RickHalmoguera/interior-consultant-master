@@ -45,6 +45,7 @@ body{
 
 #menuOpenBtn{
     font-size: 38px;
+    cursor: pointer;
 }
 
 .c-nav__navlinks{
@@ -59,6 +60,7 @@ body{
 }
 
 .c-menu{
+    z-index: 99999;
     display: none;
     background: #181719;
     position: absolute;
@@ -73,6 +75,13 @@ body{
     font-size: 38px;
     display: flex;
     justify-content: end;
+    cursor: pointer;
+}
+
+.c-menu__section:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+
 }
 
 .c-menu__navlinks{
@@ -89,6 +98,10 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.c-hero{
+    width: 100%;
 }
 
 .c-hero__textBox{
@@ -131,8 +144,8 @@ body{
 }
 
 .c-hero__gallery{
+    margin-top: 2em;
     position: relative;
-    
 }
 
 .c-hero__gallery img{
@@ -142,9 +155,12 @@ body{
 .c-card{
     background-color: #181719;
     position: absolute;
-    right: 50%;
-    bottom: 10em;
-    max-width: 410px;
+    left: 0;
+    right: 0;
+    bottom: -20%;
+    margin: 0 auto;
+    
+    width: 300px;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -200,11 +216,17 @@ footer{
     padding: 1em;
     position: absolute;
     bottom: 0;
-    display: flex;
-    justify-content: center;
+    align-self: center;
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
 
     .c-nav__desktop{
         display: flex;
@@ -214,5 +236,20 @@ footer{
     
     .c-nav__mobile{
         display: none
+    }
+
+    .c-hero{
+        display: flex;
+        gap: 3em;
+        justify-content: space-between ;
+        align-items: center;
+    }
+    .c-hero__gallery{
+        max-width: 821px;
+    }
+
+    .c-card{
+        width: 410px;
+        bottom: -10%;
     }
 }
