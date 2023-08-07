@@ -11,7 +11,7 @@ body{
     background: #181719;
     color: #fff;
     height: 100svh;
-
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -101,7 +101,8 @@ body{
 }
 
 .c-hero{
-    width: 100%;
+    max-width: 1000px;
+    align-self: center;
 }
 
 .c-hero__textBox{
@@ -146,6 +147,7 @@ body{
 .c-hero__gallery{
     margin-top: 2em;
     position: relative;
+    
 }
 
 .c-hero__gallery img{
@@ -245,7 +247,7 @@ footer{
         align-items: center;
     }
     .c-hero__gallery{
-        max-width: 821px;
+        max-width: 700px;
     }
 
     .c-card{
